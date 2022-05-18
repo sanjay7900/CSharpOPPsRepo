@@ -46,6 +46,10 @@ namespace CSharpOPPsRepo
             this.balance += depositeAmmount;
 
         }
+        public override double AccountBalance()
+        {
+            return this.balance;
+        }
 
         public override void WithDrowal(int drowalAmmount)
         {
@@ -55,7 +59,7 @@ namespace CSharpOPPsRepo
             if (((sufficient > 0 && this.transcation_count < 5) && drowalAmmount <= (50000 * 70)))
             {
                 this.balance-= drowalAmmount;
-                Console.WriteLine(this.balance);
+                //Console.WriteLine(this.balance);
                 this.transcation_count++;
             }
             else if (transcation_count >= 5)

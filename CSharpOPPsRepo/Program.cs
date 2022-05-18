@@ -13,6 +13,7 @@ namespace CSharpOPPsRepo
 
             CurrentAccount user1 = new CurrentAccount(1011,"sanjay Singh", 100204, 20000, "Noida", 21);
             user1.WithDrowal(5);
+            Console.WriteLine(" balance = "+user1.AccountBalance());
             user1.WithDrowal(5);
             user1.WithDrowal(5);
             user1.WithDrowal(5);

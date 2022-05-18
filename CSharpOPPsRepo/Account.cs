@@ -12,6 +12,8 @@ namespace CSharpOPPsRepo
         public abstract void WithDrowal(int drowalAmmount);
         public abstract  void Deposite (int depositeAmmount);
         public abstract void AccountDetails();
+        public abstract double AccountBalance();
+
 
 
     }

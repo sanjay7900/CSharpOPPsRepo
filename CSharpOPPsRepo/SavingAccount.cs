@@ -24,6 +24,10 @@ namespace CSharpOPPsRepo
             this.account_number = accNumber;
             this.userId = userid;   
         }
+        public override double AccountBalance()
+        {
+           return this.balance;
+        }
 
 
 
